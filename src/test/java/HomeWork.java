@@ -42,20 +42,62 @@ public class HomeWork {
 
         WebElement button = wd.findElement(By.tagName("button"));
         WebElement button1 = wd.findElement(By.cssSelector("button"));
-    }
+
 
 
     //by class
 
+    WebElement el = wd.findElement(By.className("container"));
+    WebElement el1 = wd.findElement(By.cssSelector(".container"));
+    WebElement el_1 = wd.findElement(By.xpath("//*[@class='container']"));
+
+    List<WebElement> a2 = wd.findElements(By.className("href"));
+    List<WebElement> a3 = wd.findElements(By.cssSelector(".href"));
+
     //by id
 
+        WebElement el2 = wd.findElement(By.id("root"));
+        WebElement el3 = wd.findElement(By.cssSelector("#root"));
+        WebElement el_2 = wd.findElement(By.xpath("//*[@id='root']"));
+
     //by attribute
+        WebElement el4 = wd.findElement(By.cssSelector("[placeholder='Email']"));
+        WebElement el_4 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
+        WebElement el5 = wd.findElement(By.cssSelector("[placeholder='Password']"));
+        WebElement el_5 = wd.findElement(By.xpath("//*[@placeholder='Password']"));
+        WebElement el6 = wd.findElement(By.cssSelector("[name='login']"));
+        WebElement el_6 = wd.findElement(By.xpath("//*[@name='login']"));
+        WebElement el7 = wd.findElement(By.cssSelector("[name='registration']"));
+        WebElement el_7 = wd.findElement(By.xpath("//*[@name='registration']"));
+        WebElement el8 = wd.findElement(By.cssSelector("[href='/home']"));
+        WebElement el_8 = wd.findElement(By.xpath("//*[@href='/home']"));
+        WebElement el9 = wd.findElement(By.cssSelector("[href='/about']"));
+        WebElement el_9 = wd.findElement(By.xpath("//*[@href='/about']"));
+        WebElement el10 = wd.findElement(By.cssSelector("[href='/login']"));
+        WebElement el_10 = wd.findElement(By.xpath("//*[@href='/login']"));
+        WebElement el11 = wd.findElement(By.name("email"));
+        WebElement el_11 = wd.findElement(By.xpath("//*[@name='email']"));
+        WebElement el12 = wd.findElement(By.name("password"));
+        WebElement el_12 = wd.findElement(By.xpath("//*[@name='password']"));
+
 
     //start
+WebElement el13 = wd.findElement(By.cssSelector("[placeholder ^='Email']"));
+        WebElement el_13 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
+WebElement el14 = wd.findElement(By.cssSelector("[placeholder ^='Password']"));
+        WebElement el_14 = wd.findElement(By.xpath("//*[@placeholder='Password']"));
 
     //end
+        WebElement el15 = wd.findElement(By.cssSelector("[placeholder $='Email']"));
+        WebElement el_15 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
+        WebElement el16 = wd.findElement(By.cssSelector("[placeholder $='Password']"));
+        WebElement el_16 = wd.findElement(By.xpath("//*[@placeholder='Password']"));
 
     //contains
+        WebElement el17 = wd.findElement(By.cssSelector("[placeholder *='Email']"));
+        WebElement el_17 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
+        WebElement el18 = wd.findElement(By.cssSelector("[placeholder *='Password']"));
+        WebElement el_18 = wd.findElement(By.xpath("//*[@placeholder='Password']"));
 
-
+}
 }
